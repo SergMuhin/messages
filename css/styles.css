@@ -1,0 +1,173 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+}
+
+.grey {
+	color: #7f7f7f;
+}
+
+.hidden {
+	display: none !important;
+}
+
+
+#main__wrapper {
+	display: flex;
+
+	width: 100%;
+	height: 100vh;
+
+	justify-content: center;
+	align-items: center;
+}
+
+#message__wrapper {
+	width: 600px;
+	height: 100vh;
+	max-height: 550px;
+	min-height: 250px;
+	display: flex;
+	flex-flow: column;
+}
+
+#message__header {
+	height: 80px;
+	padding: 16px 45px 16px 30px;
+	border: 1px solid #ebebeb;
+	position: relative;
+}
+
+#message__border_top {
+	width: 100%;
+	top: -10px;
+	position: absolute;
+	height: 10px;
+	background-image: url(/img/border-top.png);
+	left: 0;
+}
+
+#message__user_info {
+	position: relative;
+	display: flex;
+	height: 45px;
+}
+
+.message__user_avatar {
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+}
+
+#message__user_contacts {
+	display: flex;
+	margin: 0 0 0 15px;
+	flex-flow: column;
+	justify-content: space-evenly;
+}
+
+#message__user_name {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#message__user_stars {
+	margin: 0 0 0 auto;
+	display: flex;
+	cursor: pointer;
+}
+
+.star {
+	width: 16px;
+	height: 16px;
+	background-image: url('/img/sprites.png');
+}
+
+#message__close {
+	position: absolute;
+	top: -4px;
+	right: -38px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+#message__main {
+	padding: 0 10px 0 37px;
+	max-height: 325px;
+	overflow-y: scroll;
+}
+
+.message {
+	border-radius: 6px;
+	display: flex;
+	min-height: 46px;
+	padding: 6px 16px 6px 8px;
+	transition: all 2s ease-in;
+}
+
+.message__avatar {
+	width: 30px;
+	height: 30px;
+}
+
+.message__text {
+	max-width: 365px;
+	margin: -4px 0 0 15px;
+}
+
+.message__date {
+	margin: -4px 0 0 auto;
+}
+
+.message__client {
+	background: #f7f5f7;
+}
+.message__client_new {
+	background: #4fc3f7;
+}
+
+#messages_input_wrapper {
+	margin: auto 0 0 0;
+	padding: 15px 30px;
+	min-height: 135px;
+	display: flex;
+	background: #e9f2fa;
+}
+
+
+#message_my_avatar {
+	margin: 0 15px 0 0;
+}
+
+#message_my_text {
+	display: flex;
+	flex-flow: column;
+
+}
+
+#message__textarea {
+	margin: 0 0 10px 0;
+	width: 480px;
+	resize: none;
+	padding: 0 8px;
+}
+
+#message__send {
+	height: 30px;
+	width: 135px;
+}
+
+.toggle_messages_view {
+	position: absolute !important;
+	top: 10px;
+	right: 20px;
+	height: 80px !important;
+	cursor: pointer;
+}
